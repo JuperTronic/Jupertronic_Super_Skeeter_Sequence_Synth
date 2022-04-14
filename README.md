@@ -3,19 +3,19 @@ Arduino synth with sequence triggering, drone glitch setting, rate, legato, phas
 
 The sound generation is based on the Mosquito Synth by AnalogSketchbook https://www.instructables.com/Arpeggiating-Synthesizer-Mosquito-I/
 
-Extensive changes and additions have been made.
-  -Extensively customized the sequences.
-  -Adjusted the frequency shift between the 2 oscilators to a 5th to create a power chord.
-  -Added a latching drone button with LED which is awesome for live jamming. You can adjust the sequence when in drone mode so that you come out on a different sequence.
-  -Added MIDI in to adjust the root note of the sequence playing.
-  -Added MIDI out.
-  -Added toggle for MIDI out to send either the whole sequence or only the root note for layering a bass synth.
-  -Added sync out. It may be affected by the legato adjustment.
-  -Root note changes via MIDI are stored when received and take effect on first note of sequence only, not in the middle, to prevent live jam timing accidents when you trigger a change.
-  -Sequence changes are stored when buttons are pressed and take effect on the first note of a sequence only as explained above.
-  -A second Arduino connected to the buttons runs an OLED display showing the sequence # selected so you can tell what the heck you're doing when you change sequnces. 
-  -Drone button LED flashes on last note of sequence. 
-  -OLED screen has a blinking indicator for last note and first note of sequence for timing cues.
+** Extensive changes and additions have been made. **
+  - Extensively customized the sequences.
+  - Adjusted the frequency shift between the 2 oscilators to a 5th to create a power chord.
+  - Added a latching drone button with LED which is awesome for live jamming. You can adjust the sequence when in drone mode so that you come out on a different sequence.
+  - Added MIDI in to adjust the root note of the sequence playing.
+  - Added MIDI out.
+  - Added toggle for MIDI out to send either the whole sequence or only the root note for layering a bass synth.
+  - Added sync out. It may be affected by the legato adjustment.
+  - Root note changes via MIDI are stored when received and take effect on first note of sequence only, not in the middle, to prevent live jam timing accidents when you trigger a change.
+  - Sequence changes are stored when buttons are pressed and take effect on the first note of a sequence only as explained above.
+  - A second Arduino connected to the buttons runs an OLED display showing the sequence # selected so you can tell what the heck you're doing when you change sequnces. 
+  - Drone button LED flashes on last note of sequence. 
+  - OLED screen has a blinking indicator for last note and first note of sequence for timing cues.
 
 There may be better ways to implement this from scratch, but I have learned a ton from modifying the original Mosquito code to add the functionality that I wanted. You can play this alone or with lots of other stuff like a drum sequencer, external synths, MIDI controllers, etc. 
 
@@ -25,7 +25,7 @@ Install Jupertronic_Skeeter.ino on your first Arduino which is in charge of the 
 
 Install Jupertronic_Skeeter_Display.ino on your second Arduino which will run the OLED display. You need to install the ss_oled.h library to run the OLED. 
 
-Connect ground from both boards to a common spot. Connect buttons to both boards by jumpering or connecting 2 signal leads to the buttons themselves. 
+** Connect ground from both boards to a common spot. ** Connect buttons to both boards by jumpering or connecting 2 signal leads to the buttons themselves. 
 
 Wish list - rate sync in.
 
