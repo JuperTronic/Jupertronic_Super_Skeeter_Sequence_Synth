@@ -1,4 +1,4 @@
-# Jupertronic_Super_Skeeter_Sequence_Synth
+# Jupertronic Super Skeeter Sequence Synth
 Arduino synth with sequence triggering, drone glitch setting, rate, legato, phase, LP filter, sync out, MIDI in and out, and OLED display
 
 The sound generation is based on the Mosquito Synth by AnalogSketchbook https://www.instructables.com/Arpeggiating-Synthesizer-Mosquito-I/
@@ -19,7 +19,7 @@ The sound generation is based on the Mosquito Synth by AnalogSketchbook https://
 
 There may be better ways to implement this from scratch, but I have learned a ton from modifying the original Mosquito code to add the functionality that I wanted. You can play this alone or with lots of other stuff like a drum sequencer, external synths, MIDI controllers, etc. 
 
-I'm not a coding expert or a Fritzing wiz.
+I'm not a coding expert or a Fritzing wiz. I've commented the code pretty heavily to explain what's going on. 
 
 Install Jupertronic_Skeeter_Synth.ino on your first Arduino which is in charge of the sound. Use the MIDI in and MIDI out circuits described by NotesandVolts.com. I've included the schematics separately but not incorporated into my Fritzing. MIDI in runs into the RX pin. MIDI out runs from the TX pin. You need to install the MIDI.h library and the Mozzi library. Install a switching mechanism to disconnect the MIDI in. Otherwise you cannont update code on the board with it connected. I used a female jumper wire attached to the pin and a jumper on the MIDI socket so I can just unplug it because I didn't have any small switches at the time. A protoboard switch would be great for this. You can leave the MIDI out attached when you upload code. Be sure to switch your MIDI back on when you're done. I'm telling you, you will probably forget this.
 
