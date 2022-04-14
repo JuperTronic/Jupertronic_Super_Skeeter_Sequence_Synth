@@ -4,13 +4,9 @@ Arduino synth with sequence triggering, drone glitch setting, rate, legato, phas
 The sound generation is based on the Mosquito Synth by AnalogSketchbook https://www.instructables.com/Arpeggiating-Synthesizer-Mosquito-I/
 
 Extensive changes and additions have been made.
-
 -Extensively customized the sequences.
-
 -Adjusted the frequency shift between the 2 oscilators to a 5th to create a power chord.
-
 -Added a latching drone button with LED which is awesome for live jamming. You can adjust the sequence when in drone mode so that you come out on a different sequence.
-
 -Added MIDI in to adjust the root note of the sequence playing.
 -Added MIDI out.
 -Added toggle for MIDI out to send either the whole sequence or only the root note for layering a bass synth.
