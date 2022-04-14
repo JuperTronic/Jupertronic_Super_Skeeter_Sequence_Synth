@@ -29,7 +29,7 @@ Install Jupertronic_Skeeter_Display.ino on your second Arduino which will run th
 
 For a simpler version of this with a single Arduino, sound adjustments, drone glitch added, MIDI in (not out), sync out, and no display see Jupertronic_Simple_Skeeter_Synth. You can added the changes in the code so that the root note and sequence only change on the first note of sequence by referencing this code. 
 
-Wish list - rate sync in.
+Wish list - rate sync in Volca compatible.
 
 Feel free to build your own Skeeter and to mod or share with reference to this project and Mosquito. Let me know if you make upgrades. 
 
