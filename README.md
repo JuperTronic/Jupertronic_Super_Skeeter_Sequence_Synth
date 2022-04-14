@@ -27,10 +27,14 @@ Install Jupertronic_Skeeter_Display.ino on your second Arduino which will run th
 
 **Connect ground from both boards to a common spot.** Connect buttons to both boards by jumpering or connecting 2 signal leads to the buttons themselves. 
 
+For a simpler version of this with a single Arduino, no display, and only MIDI in see Jupertronic_Simple_Skeeter_Synth.
+
 Wish list - rate sync in.
 
 Feel free to build your own Skeeter and to mod or share with reference to this project and Mosquito. Let me know if you make upgrades. 
 
 Wishing wellness and wellbeing to all!
+
 *-Janis*
+
 Jupertronic aka Janis Wilson Hughes aka J Dub aka vitalWho aka EvolutionStoneware (youtube)
