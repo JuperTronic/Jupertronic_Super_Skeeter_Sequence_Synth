@@ -3,7 +3,7 @@ Arduino synth with sequence triggering, drone glitch setting, rate, legato, phas
 
 The sound generation is based on the Mosquito Synth by AnalogSketchbook https://www.instructables.com/Arpeggiating-Synthesizer-Mosquito-I/
 
-** Extensive changes and additions have been made. **
+**Extensive changes and additions have been made.**
   - Extensively customized the sequences.
   - Adjusted the frequency shift between the 2 oscilators to a 5th to create a power chord.
   - Added a latching drone button with LED which is awesome for live jamming. You can adjust the sequence when in drone mode so that you come out on a different sequence.
@@ -25,12 +25,12 @@ Install Jupertronic_Skeeter.ino on your first Arduino which is in charge of the 
 
 Install Jupertronic_Skeeter_Display.ino on your second Arduino which will run the OLED display. You need to install the ss_oled.h library to run the OLED. 
 
-** Connect ground from both boards to a common spot. ** Connect buttons to both boards by jumpering or connecting 2 signal leads to the buttons themselves. 
+**Connect ground from both boards to a common spot.** Connect buttons to both boards by jumpering or connecting 2 signal leads to the buttons themselves. 
 
 Wish list - rate sync in.
 
 Feel free to build your own Skeeter and to mod or share with reference to this project and Mosquito. Let me know if you make upgrades. 
 
 Wishing wellness and wellbeing to all!
--Janis
+*-Janis*
 Jupertronic aka Janis Wilson Hughes aka J Dub aka vitalWho aka EvolutionStoneware (youtube)
