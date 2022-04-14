@@ -10,7 +10,7 @@ The sound generation is based on the Mosquito Synth by AnalogSketchbook https://
   - Added MIDI in to adjust the root note of the sequence playing.
   - Added MIDI out.
   - Added toggle for MIDI out to send either the whole sequence or only the root note for layering a bass synth.
-  - Added sync out. It may be affected by the legato adjustment.
+  - Added sync out for drum sequencer. It may be affected by the legato adjustment.
   - Root note changes via MIDI are stored when received and take effect on first note of sequence only, not in the middle, to prevent live jam timing accidents when you trigger a change.
   - Sequence changes are stored when buttons are pressed and take effect on the first note of a sequence only as explained above.
   - A second Arduino connected to the buttons runs an OLED display showing the sequence # selected so you can tell what the heck you're doing when you change sequences. 
@@ -21,15 +21,15 @@ There may be better ways to implement this from scratch, but I have learned a to
 
 I'm not a coding expert or a Fritzing wiz. I've commented the code pretty heavily to explain what's going on. 
 
-Install Jupertronic_Skeeter_Synth.ino on your first Arduino which is in charge of the sound. Use the MIDI in and MIDI out circuits described by NotesandVolts.com. I've included the schematics separately but not incorporated into my Fritzing. MIDI in runs into the RX pin. MIDI out runs from the TX pin. You need to install the MIDI.h library and the Mozzi library. Install a switching mechanism to disconnect the MIDI in. Otherwise you cannont update code on the board with it connected. I used a female jumper wire attached to the pin and a jumper on the MIDI socket so I can just unplug it because I didn't have any small switches at the time. A protoboard switch would be great for this. You can leave the MIDI out attached when you upload code. Be sure to switch your MIDI back on when you're done. I'm telling you, you will probably forget this.
+Install Jupertronic_Skeeter_Synth.ino on your first Arduino which is in charge of the sound. Use the MIDI in and MIDI out 5 pin DIN socket circuits described by NotesandVolts.com. I've included the schematics separately but not incorporated into my Fritzing. MIDI in runs into the RX pin. MIDI out runs from the TX pin. You need to install the MIDI.h library and the Mozzi library. Install a switching mechanism to disconnect the MIDI in. Otherwise you cannont update code on the board with it connected. I used a female jumper wire attached to the pin and a jumper on the MIDI socket so I can just unplug it because I didn't have any small switches at the time. A protoboard switch would be great for this. You can leave the MIDI out wiring attached when you upload code. _Be sure to switch your MIDI back on when you're done. I'm telling you, you will probably forget this._
 
 Install Jupertronic_Skeeter_Display.ino on your second Arduino which will run the OLED display. You need to install the ss_oled.h library to run the OLED. 
 
-**_Connect ground from both boards to a common spot._** Connect buttons to both boards by jumpering or connecting 2 signal leads to the buttons themselves. 
+**_Connect ground from both boards to a common spot._** Connect buttons to common ground and input pins for both boards by jumpering the input or connecting 2 signal leads to the buttons themselves. If you jumper you could put in diodes if you want to.
 
 For a simpler version of this with a single Arduino, sound adjustments, drone glitch added, MIDI in (not out), sync out, and no display see Jupertronic_Simple_Skeeter_Synth. You can added the changes in the code so that the root note and sequence only change on the first note of sequence by referencing this code. 
 
-Wish list - rate sync in Volca compatible.
+Wish list - rate sync in that is Volca compatible.
 
 Feel free to build your own Skeeter and to mod or share with reference to this project and Mosquito. Let me know if you make upgrades. 
 
