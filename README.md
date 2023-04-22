@@ -10,12 +10,15 @@ The sound generation is based on the Mosquito Synth by AnalogSketchbook https://
   - Added MIDI in to adjust the root note of the sequence playing.
   - Added MIDI out.
   - Added toggle for MIDI out to send either the whole sequence or only the root note for layering a bass synth.
+  - Changed Osc1 pot to control the root note of the MIDI out. Noon or 12 o'clock is same as Super Skeeter, clockwise goes higher up to 1 octave, counter clockwise goes lower down to -1 octave. Included a custom pot scale diagram. I suggest using 0s, 12s, or 7s for unison, octaves, or 5ths.
   - Added sync out for drum sequencer. It may be affected by the legato adjustment.
   - Root note changes via MIDI are stored when received and take effect on first note of sequence only, not in the middle, to prevent live jam timing accidents when you trigger a change.
   - Sequence changes are stored when buttons are pressed and take effect on the first note of a sequence only as explained above.
   - A second Arduino connected to the buttons runs an OLED display showing the sequence # selected so you can tell what the heck you're doing when you change sequences. 
   - Drone button LED flashes on last note of sequence. 
   - OLED screen has a blinking indicator for last note and first note of sequence for timing cues.
+  - Super Skeeter outputs MIDI on channel 1.
+  - Super Skeeter accepts MIDI in on all channels. Use any other channel except 1 for MIDI in for proper operation.
 
 There may be better ways to implement this from scratch, but I have learned a ton from modifying the original Mosquito code to add the functionality that I wanted. You can play this alone or with lots of other stuff like a drum sequencer, external synths, MIDI controllers, etc. 
 
