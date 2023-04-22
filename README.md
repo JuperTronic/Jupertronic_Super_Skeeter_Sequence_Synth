@@ -18,7 +18,7 @@ The sound generation is based on the Mosquito Synth by AnalogSketchbook https://
   - Drone button LED flashes on last note of sequence. 
   - OLED screen has a blinking indicator for last note and first note of sequence for timing cues.
   - Super Skeeter outputs MIDI on channel 1.
-  - Super Skeeter accepts MIDI in on all channels. **Use any other channel except 1 for MIDI in for proper operation.**
+  - Super Skeeter accepts MIDI in on all channels. **_Use any other channel except 1 for MIDI in for proper operation._**
 
 There may be better ways to implement this from scratch, but I have learned a ton from modifying the original Mosquito code to add the functionality that I wanted. You can play this alone or with lots of other stuff like a drum sequencer, external synths, MIDI controllers, etc. 
 
