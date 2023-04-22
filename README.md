@@ -6,7 +6,7 @@ The sound generation is based on the Mosquito Synth by AnalogSketchbook https://
 **Extensive changes and additions have been made.**
   - Extensively customized the sequences.
   - Adjusted the frequency shift between the 2 oscilators to a 5th to create a power chord.
-  - Added a latching drone button with LED which is awesome for live jamming. You can adjust the sequence when in drone mode so that you come out on a different sequence.
+  - Added a latching drone button with LED which is awesome for live jamming. You can adjust the sequence when in drone mode so that you come out on a different sequence. The drone has occassional glitching where it plays an octave up. 
   - Added MIDI in to adjust the root note of the sequence playing.
   - Added MIDI out.
   - Added toggle for MIDI out to send either the whole sequence or only the root note for layering a bass synth.
@@ -18,7 +18,7 @@ The sound generation is based on the Mosquito Synth by AnalogSketchbook https://
   - Drone button LED flashes on last note of sequence. 
   - OLED screen has a blinking indicator for last note and first note of sequence for timing cues.
   - Super Skeeter outputs MIDI on channel 1.
-  - Super Skeeter accepts MIDI in on all channels. Use any other channel except 1 for MIDI in for proper operation.
+  - Super Skeeter accepts MIDI in on all channels. **Use any other channel except 1 for MIDI in for proper operation.**
 
 There may be better ways to implement this from scratch, but I have learned a ton from modifying the original Mosquito code to add the functionality that I wanted. You can play this alone or with lots of other stuff like a drum sequencer, external synths, MIDI controllers, etc. 
 
